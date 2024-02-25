@@ -9,7 +9,7 @@ var canConstruct = function (ransomNote, magazine) {
         // Replacing every character found in ransomNote similar to magazine with ""
         ransomNote = ransomNote.replace(char, "");
     }
-    // If ransomNote is blank it means we can form magazine with ransomNote so return TRUE
+    // If ransomNote is blank it means we can form ransomNote with magazine so return TRUE
     if (!ransomNote) return true;
     // Else we cannot make it so return FALSE
     return false;
